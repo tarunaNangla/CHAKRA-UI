@@ -11,8 +11,10 @@ import {
   Flex,
   Spacer,
   Button,
-  Container,Center,Input, Icon
+  Container,Center,Input
 } from '@chakra-ui/react';
+
+import { ChevronLeftIcon,ChevronRightIcon} from '@chakra-ui/icons'
 
 
 function App() {
@@ -52,7 +54,7 @@ function App() {
             <Center>
                 <Flex gap={5} p={5}>
                     <Button w="140px" bg="slateblue" borderRadius="10px">Remote</Button>
-                    <Button w="140px" bg="slateblue" borderRadius="10px">Tech</Button>
+                    <Button w="140px" bg="slateblue" borderRadius="10px"><ChevronLeftIcon/><ChevronRightIcon/>Tech</Button>
                     <Button w="140px" bg="slateblue" borderRadius="10px">Marketing</Button>
                 </Flex>
             </Center>
