@@ -14,12 +14,14 @@ import {
   Container,Center,Input
 } from '@chakra-ui/react';
 
-import { ChevronLeftIcon,ChevronRightIcon} from '@chakra-ui/icons'
+import { ChevronLeftIcon,ChevronRightIcon,SearchIcon} from '@chakra-ui/icons'
+import Github from './Components/Github';
 
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
+      {/* <Github /> */}
       {/* Navbar */}
          <Flex borderBottom="1px" p={5}>
              <Box fontWeight="bold" bg="slateblue" border="1px blue" color="white" w="40px" p={2}>4d</Box>
@@ -49,7 +51,7 @@ function App() {
             <Center>
             <Input w="400px" placeholder='Type job title or keyword' />
             </Center>
-            <Box fontWeight="bold" bg="slateblue" border="1px blue" color="white" w="40px" p={2} >F</Box>
+            <Box fontWeight="bold" bg="slateblue" border="1px blue" color="white" w="40px" p={2} ><SearchIcon/></Box>
             </Flex>
             <Center>
                 <Flex gap={5} p={5}>
@@ -69,21 +71,29 @@ function App() {
             <Flex p={1} fontWeight="bold" fontSize="4xl" gap={2}>
             <Box color="slateblue">Recent</Box><Box> Jobs</Box>
             </Flex>
+            
+
+           
+
+            <Github />
+          
+
           </Container>
         </Box>
          
         {/* Midbox */}
         <Container borderRadius="10px" border="1px soild slateblue" bg="slateblue">
-          <Center p={2}>Subscribe to our Newsletter</Center>
+          
+          <Center color="white" fontSize={25} fontWeight="bold" p={2}>Subscribe to our Newsletter</Center>
           <Flex p={2} gap="10px">
             <Center>
             <Input bg="white" w="300px" placeholder='Your Email' />
             </Center>
             <Box textAlign="center" borderRadius="10px" fontWeight="bold" bg="green" border="1px blue" color="white" w="200px" p={2} >Submit</Box>
           </Flex>
-          <Center p={2}>Receive the best job offers every week</Center>
+          <Center color="white" p={2}>Receive the best job offers every week</Center>
         </Container>
-      
+        <Github/>
 </Box>
       {/* footer */}
      <Box p={50} >
