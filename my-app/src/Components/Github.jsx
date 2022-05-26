@@ -32,7 +32,7 @@ const Github = () => {
            return(
                <Box>
                    <Center>
-                        <Flex gap={20} border="2px solid blue" p={4} m={2} borderRadius="10px">
+                        <Flex w="500px" gap={30} border="2px solid blue" p={4} m={2} borderRadius="10px">
                            <Box>
                               <Image w="50px" h="40px" src={ele.avatar} alt='Dan Abramov' />
                            </Box>

@@ -71,13 +71,7 @@ function App() {
             <Flex p={1} fontWeight="bold" fontSize="4xl" gap={2}>
             <Box color="slateblue">Recent</Box><Box> Jobs</Box>
             </Flex>
-            
-
-           
-
             <Github />
-          
-
           </Container>
         </Box>
          
